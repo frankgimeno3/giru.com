@@ -9,7 +9,7 @@ const QuienesSomos = () => {
         </h2>
         <div className="flex flex-row align-center my-8">
           <div>
-            <Image src="/aboutus.png" alt="aboutuse" width={800} height={800} />
+            <Image src="/aboutus.png" alt="aboutuse" width={950} height={950} />
           </div>
           <p className="   text-lg text-gray-600 p-10  bg-gray-50 shadow-lg">
             Somos una agencia de desarrolladores web con sede en Barcelona,
@@ -20,15 +20,15 @@ const QuienesSomos = () => {
           </p>
         </div>
         <div className="flex flex-row my-8">
-          <p className="text-lg text-gray-600 leading-relaxed p-10 bg-gray-50 shadow-lg">
-            En Giru, destacamos por la creación de
-            contenido único, original y de alta calidad. Nuestra versatilidad nos
-            permite trabajar en diversos sectores profesionales, asegurando
-            siempre una experiencia de usuario excepcional y interfaces
-            intuitivas, adaptándonos las necesidades únicas de cada cliente.
+          <p className="text-lg text-gray-600 leading-relaxed p-10 pt-12 bg-gray-50 shadow-lg">
+            En Giru, destacamos por la creación de <span className="font-bold">contenido único,</span> original y
+            de alta calidad. Nuestra versatilidad nos permite trabajar en
+            diversos sectores profesionales, asegurando siempre una experiencia
+            de usuario excepcional y interfaces intuitivas, adaptándonos las
+            necesidades únicas de cada cliente.
           </p>
           <div className="h-full">
-            <Image src="/logo.png" alt="logo" width={800} height={800} />
+            <Image src="/logo.png" alt="logo" width={900} height={900} />
           </div>
         </div>
         <div className="flex flex-row align-center my-8">
@@ -36,30 +36,34 @@ const QuienesSomos = () => {
             <Image
               src="/ia.png"
               alt="ia"
-              width={1000} // Establece un valor máximo para el ancho
-              height={1000} // Establece un valor máximo para el alto
+              width={1080} // Establece un valor máximo para el ancho
+              height={1080} // Establece un valor máximo para el alto
               className="border border-gray-50 shadow"
             />
           </div>
           <p className="   text-lg text-gray-600 p-10  bg-gray-50 shadow-lg">
-            Utilizamos inteligencia artificial para crear
-            imágenes y textos originales y únicos. Todas las imágenes en nuestra web son
-            generadas por IA, y no poseen derechos de autor. Ofrecemos un servicio único:
-            dar vida a cualquier imagen que puedas imaginar mediante inteligencia artificial,
-            para que puedas llenar tu web de imágenes sin necesidad de un fotógrafo.
-            .
+            Utilizamos inteligencia artificial para crear imágenes y textos
+            originales y únicos. Ofrecemos un servicio único:
+            dar vida a cualquier imagen que puedas imaginar mediante
+            inteligencia artificial, para que puedas llenar tu web de imágenes
+            sin necesidad de un fotógrafo. 
+            <span className="font-bold">Todas las imágenes de esta web han sido creadas con inteligencia artificial!</span>
           </p>
         </div>
         <div className="flex flex-row my-8">
-          <p className="text-lg text-gray-600 leading-relaxed p-10 bg-gray-50 shadow-lg">
-            En Giru, destacamos por la creación de
-            contenido único, original y de alta calidad. Nuestra versatilidad nos
-            permite trabajar en diversos sectores profesionales, asegurando
-            siempre una experiencia de usuario excepcional y interfaces
-            intuitivas, adaptándonos las necesidades únicas de cada cliente.
+          <p className="text-lg text-gray-600 leading-relaxed p-10 pt-16 bg-gray-50 shadow-lg">
+            Tu tiempo es valioso, y en Giru, estamos aquí para maximizar su
+            aprovechamiento y garantizar el éxito de tu proyecto. Trabajamos en
+            un rango de <span className="font-bold text-xl"> tiempo récord de 2 meses </span> desde la conceptualización del
+            proyecto hasta su entrega
           </p>
           <div className="h-full">
-            <Image src="/logo.png" alt="logo" width={800} height={800} />
+            <Image
+              src="/tutiempo.png"
+              alt="tutiempo"
+              width={725}
+              height={725}
+            />
           </div>
         </div>
       </div>

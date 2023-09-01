@@ -2,7 +2,8 @@ import Image from 'next/image'
  import QuienesSomos from "../components/quiensomos/QuienesSomos"
 import Navbar from '../components/home/Navbar'
 import Landing from '../components/home/Landing'
- 
+import Footer from '../components/home/Footer'
+
 export default function Home() {
   return (
     <div className='bg-white'>
@@ -11,6 +12,7 @@ export default function Home() {
       <div className='mx-24 px-24'>
         <QuienesSomos/>
       </div>
+      <Footer/>
     </div>
   )
 }
