@@ -41,12 +41,12 @@ const Footer = () => {
             <address className="flex flex-col text-sm mt-5">
               <p>Dirección: Bruc 48, Barcelona</p>
               <p>Teléfono: (+34) *** *** ***</p>
-              <p>Email: info@miempresa.com</p>
+              <p>Email: info@giru.es</p>
             </address>
           </div>
         </div>
         <div className="mt-4 text-center text-gray-400 text-sm">
-          &copy; 2023 Mi Empresa | Todos los derechos reservados
+          &copy; 2023 PROPORCION3,S.A. | Todos los derechos reservados
         </div>
       </div>
     </footer>
