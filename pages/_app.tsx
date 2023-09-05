@@ -1,15 +1,15 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head';
-import {Montserrat} from '@next/font/google'
+import {Lora} from 'next/font/google'
 
-const montserrat = Montserrat({
+const lora = Lora({
   subsets: ["latin"],  
   weight: "400"
  })
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={montserrat.className}>
+    <div className={lora.className}>
     <Head>
       <title>Giru</title>
       <link rel="icon" href="/logo.png" />
