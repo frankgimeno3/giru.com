@@ -45,10 +45,10 @@ const Floating: React.FC<FloatingProps> = ({ setCurrentPage }) => {
           >
             <Image src="/llamanos.png" alt="Llamanos" width={150} height={150} className="rounded-full brightness-50 shadow-xl" />
           </div>
-          <h3 className="absolute top-4 pl-6 pt-14 mt-1  text-lg text-white ">
+          <h3 className="absolute top-4 pl-6 pt-14 mt-1  text-lg text-white "  onClick={irContactanos}>
             Contáctanos
           </h3>
-          <div className="absolute top-3 left-3  ">
+          <div className="absolute top-3 left-3 "  onClick={irContactanos}>
             <Image src="/llamanos.png" alt="Llamanos" width={150} height={150} className="rounded-full shadow-xl hover:opacity-0" />
           </div>
         </div>
