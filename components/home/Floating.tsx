@@ -7,11 +7,6 @@ interface FloatingProps {
 const Floating: React.FC<FloatingProps> = ({ setCurrentPage }) => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const divStyle = {
-    backgroundImage: "url('/Llamanos.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  };
 
   useEffect(() => {
     const handleScroll = () => {
