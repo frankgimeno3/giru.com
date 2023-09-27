@@ -38,6 +38,7 @@ export default function Home() {
   }
   return (
     <div className="bg-white">
+    <div className="bg-slate-400 bg-opacity-10">
       <Navbar currentPage={currentPage} onPageChange={handlePageChange} />
       <Landing />
       <div className="mx-24 px-24">{currentComponent}</div>
@@ -45,6 +46,7 @@ export default function Home() {
       <div className="fixed bottom-0 right-0 p-4">
         <Floating />
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
