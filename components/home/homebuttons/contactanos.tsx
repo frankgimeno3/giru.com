@@ -3,8 +3,40 @@ import Footer from "../Footer";
 import Floating from "../Floating";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
+import { useEffect } from 'react';
 
 const Contactanos = () => {
+    useEffect(() => {
+        const scrollToSmoothly = (to: number, duration: number) => {
+          const start = window.scrollY;
+          const change = to - start;
+          const increment = 20;
+          let currentTime = 0;
+    
+          const animateScroll = () => {
+            currentTime += increment;
+            const newPosition = easeInOutQuad(currentTime, start, change, duration);
+            window.scrollTo(0, newPosition);
+    
+            if (currentTime < duration) {
+              requestAnimationFrame(animateScroll);
+            }
+          };
+    
+          const easeInOutQuad = (t: number, b: number, c: number, d: number) => {
+            t /= d / 2;
+            if (t < 1) return (c / 2) * t * t + b;
+            t--;
+            return (-c / 2) * (t * (t - 2) - 1) + b;
+          };
+    
+          requestAnimationFrame(animateScroll);
+        };
+    
+        const windowHeight = window.innerHeight;
+         scrollToSmoothly(0* windowHeight, 800);
+      }, []); 
+
     const [currentPage, setCurrentPage] = useState<string>("Contacto");
     const router = useRouter();
 

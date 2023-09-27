@@ -1,6 +1,40 @@
 import Image from "next/image";
+import { useEffect } from 'react';
 
 const QuienesSomos = () => {
+  useEffect(() => {
+    const scrollToSmoothly = (to: number, duration: number) => {
+      const start = window.scrollY;
+      const change = to - start;
+      const increment = 20;
+      let currentTime = 0;
+
+      const animateScroll = () => {
+        currentTime += increment;
+        const newPosition = easeInOutQuad(currentTime, start, change, duration);
+        window.scrollTo(0, newPosition);
+
+        if (currentTime < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+
+      const easeInOutQuad = (t: number, b: number, c: number, d: number) => {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      };
+
+      requestAnimationFrame(animateScroll);
+    };
+
+    const windowHeight = window.innerHeight;
+    const scrollAmount = 0.82 * windowHeight; //esto es el desplazamiento hasta el que scrolleamos
+    scrollToSmoothly(scrollAmount, 1000);
+  }, []);
+ 
+
   return (
     <section className="bg-white pb-12 pt-8 relative px-24 text-sm">
       <div>

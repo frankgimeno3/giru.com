@@ -64,13 +64,13 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) => {
         >
           Contáctanos
         </button>
-        <button
-          className="bg-yellow-500 text-black rounded-lg  py-3 my-1 px-4   mx-5 text-sm "
+         <button
+          className="bg-yellow-500 text-black rounded-lg  my-1 px-4  mx-5 text-sm font-light "
           onClick={handleIniciarSesionClick}
         >
-          INICIAR SESIÓN
+          Iniciar Sesión
         </button>
-        </div>
+         </div>
       </div>
 
       <div className="absolute inset-0 opacity-80 bg-black"> </div>

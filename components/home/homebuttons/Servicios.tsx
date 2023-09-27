@@ -1,23 +1,55 @@
 import Image from "next/image";
+import { useEffect } from 'react';
 
 const Contacto = () => {
+  useEffect(() => {
+    const scrollToSmoothly = (to: number, duration: number) => {
+      const start = window.scrollY;
+      const change = to - start;
+      const increment = 20;
+      let currentTime = 0;
+
+      const animateScroll = () => {
+        currentTime += increment;
+        const newPosition = easeInOutQuad(currentTime, start, change, duration);
+        window.scrollTo(0, newPosition);
+
+        if (currentTime < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+
+      const easeInOutQuad = (t: number, b: number, c: number, d: number) => {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      };
+
+      requestAnimationFrame(animateScroll);
+    };
+
+    const windowHeight = window.innerHeight;
+     scrollToSmoothly(0.75* windowHeight, 1000);
+  }, []);
+
   return (
     <div className="bg-white pb-12 pt-8 relative px-24 text-sm">
       <div>
         <h2 className="text-2xl font-semibold text-gray-600 mb-2">
           Nuestros servicios
         </h2>
-        <p className="   text-base text-gray-600 p-5   bg-transparent leading-relaxed ">
+        <p className="   text-base text-gray-600 pl-2   bg-transparent leading-relaxed ">
           Disponemos de diferentes servicios que se adaptan perfil de negocio de
           nuestros clientes. Paralelamente, ofrecemos la posibilidad de
           personalizar las soluciones a cada caso particular.
         </p>
 
-        <h2 className="text-2xl font-semibold text-gray-600 mb-2 mt-7">
+        <h2 className="text-2xl font-semibold text-gray-600 mt-7">
           Servicios disponibles
         </h2>
 
-        <div className="flex flex-row align-center mt-6  shadow-lg">
+        <div className="flex flex-row align-center mt-2 shadow-lg">
           <div>
             <Image
               src="/tienda.png"
@@ -37,7 +69,7 @@ const Contacto = () => {
           </div>
         </div>
         <div className="flex flex-row align-center mt-6  shadow-lg">
-          <div className="   text-lg text-gray-600  p-10 pr-16 pt-24 bg-gray-50 shadow-lg">
+          <div className="   text-lg text-gray-600  p-10 pr-16 pt-14 bg-gray-50 shadow-lg">
             <p className="font-bold">Soluciones para empresas</p>
             <p className="   text-base text-gray-600    bg-transparent leading-relaxed ">
               Brindamos soluciones web para lo que su web necesite.
@@ -45,7 +77,7 @@ const Contacto = () => {
             </p>
           </div>
           <div className="h-full">
-            <Image src="/oficina.png" alt="oficina" width={420} height={420} />
+            <Image src="/oficina.png" alt="oficina" width={400} height={400} />
           </div>
         </div>
         <div className="flex flex-row align-center mt-6  shadow-lg">
@@ -73,7 +105,7 @@ const Contacto = () => {
             problemas en un tiempo récord.
           </p>
           <div className="h-full">
-            <Image src="/reparar.png" alt="reparar" width={725} height={725} />
+            <Image src="/reparar.png" alt="reparar" width={705} height={705} />
           </div>
         </div>
       </div>

@@ -59,8 +59,12 @@ export default function Home() {
         <div className={componentclass}>{currentComponent}</div>
         <Footer onPageChange={handlePageChange} />
         <div className="fixed bottom-0 right-0 p-4">
+        {currentPage !== "Contacto" && (
+        <div className="fixed bottom-0 right-0 p-4">
           <Floating />
         </div>
+      )}
+              </div>
       </div>
     </div>
   );
