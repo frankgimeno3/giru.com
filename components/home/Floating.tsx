@@ -42,13 +42,13 @@ const Floating: React.FC<FloatingProps> = ({ setCurrentPage }) => {
           <div className="relative  "
             onClick={irContactanos}
           >
-            <Image src="/Llamanos.png" alt="Llamanos" width={150} height={150} className="rounded-full brightness-50 shadow-xl" />
+            <Image src="/llamanos.png" alt="Llamanos" width={150} height={150} className="rounded-full brightness-50 shadow-xl" />
           </div>
           <h3 className="absolute top-4 pl-6 pt-14 mt-1  text-lg text-white ">
             Contáctanos
           </h3>
           <div className="absolute top-3 left-3  ">
-            <Image src="/Llamanos.png" alt="Llamanos" width={150} height={150} className="rounded-full shadow-xl hover:opacity-0" />
+            <Image src="/llamanos.png" alt="Llamanos" width={150} height={150} className="rounded-full shadow-xl hover:opacity-0" />
           </div>
         </div>
 
