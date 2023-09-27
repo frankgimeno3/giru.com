@@ -30,7 +30,7 @@ const Inicio = () => {
     };
 
     const windowHeight = window.innerHeight;
-    const scrollAmount = 0.1 * windowHeight; //esto es el desplazamiento hasta el que scrolleamos
+    const scrollAmount = 0 * windowHeight; //esto es el desplazamiento hasta el que scrolleamos
     scrollToSmoothly(scrollAmount, 1000);
   }, []);
  

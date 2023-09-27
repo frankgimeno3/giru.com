@@ -12,7 +12,7 @@ import Contacto from "../components/home/homebuttons/contactanos";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<string>("Home");
- 
+
   const handlePageChange = (pageName: string) => {
     setCurrentPage(pageName);
   };
@@ -34,17 +34,17 @@ export default function Home() {
       componentclass = "mx-24 px-24"
 
       break;
-      case "Contacto":
-        currentComponent = <Contacto />;
-        componentclass = ""
-        break;
+    case "Contacto":
+      currentComponent = <Contacto />;
+      componentclass = ""
+      break;
     default:
       currentComponent = <Inicio />;
       componentclass = "mx-24 px-24"
 
   }
 
- 
+
   // Renderizado condicional de Landing
   const shouldRenderLanding =
     currentPage === "Home" || currentPage === "QuienesSomos" || currentPage === "Servicios";
@@ -53,19 +53,17 @@ export default function Home() {
     <div className="bg-white">
       <div className="bg-slate-300 bg-opacity-10">
         <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        
+
         {shouldRenderLanding && <Landing />}
-        
+
         <div className={componentclass}>{currentComponent}</div>
         <Footer onPageChange={handlePageChange} />
-        <div className="fixed bottom-0 right-0 p-4">
-        {currentPage !== "Contacto" && (
-        <div className="fixed bottom-0 right-0 p-4">
-          <Floating />
-        </div>
-      )}
-              </div>
-      </div>
+           {currentPage !== "Contacto" && (
+            <div className="fixed bottom-2 right-0  p-3">
+              <Floating setCurrentPage={setCurrentPage}/>
+            </div>
+          )}
+       </div>
     </div>
   );
 }
