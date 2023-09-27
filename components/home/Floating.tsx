@@ -32,6 +32,7 @@ const Floating: React.FC<FloatingProps> = ({ setCurrentPage }) => {
 
   const irContactanos = () => {
     setCurrentPage("Contacto")
+    console.log("llegó")
   }
 
 
