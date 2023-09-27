@@ -5,17 +5,22 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 
 export default function Login() {
-    const [currentPage, setCurrentPage] = useState<string>("Home");
     const router = useRouter();
 
-    const handlePageChange = (pageName: string) => {
-        setCurrentPage(pageName);
-        router.push("/");
+    const handleReturn = () => {
+        router.push('/');
     };
 
     return (
         <div className="bg-white">
-      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <nav className="fixed top-0 left-0 w-full bg-white bg-opacity-5 py-3 flex flex-row  justify-left z-50   ">
+
+                <button
+                    className="bg-yellow-500 text-black rounded-lg shadow-lg px-5 py-3  mx-5 text-sm "
+                    onClick={handleReturn}
+                >
+                    Volver a <span className="font-bold">giru.es</span>                </button>
+            </nav>
             <div className="w-full h-screen flex flex-col justify-center items-center   relative ">
                 <div className="mt-24 w-full py-16 z-10 text-gray-800">
                     <h1 className="w-full text-center font-bold text-4xl text-white ">
@@ -63,7 +68,7 @@ export default function Login() {
                     />
                 </div>
             </div>
-            <Footer onPageChange={handlePageChange} />
+            {/* <Footer onPageChange={handlePageChange} /> */}
         </div>
     );
 }

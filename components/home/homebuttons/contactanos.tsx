@@ -1,6 +1,6 @@
-import Navbar from "../components/home/Navbar";
-import Footer from "../components/home/Footer";
-import Floating from "../components/home/Floating";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import Floating from "../Floating";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
@@ -15,8 +15,7 @@ const Contactanos = () => {
  
 
     return (
-        <div className="bg-white">
-        <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+  
             <div className="w-full h-screen flex flex-col justify-center items-center relative">
                 <div className="mt-24 w-full py-16 z-10 text-gray-800">
                     <h1 className="w-full text-center font-bold text-4xl text-white">
@@ -71,8 +70,7 @@ const Contactanos = () => {
                         className="w-full h-full object-cover"
                     />
                 </div>
-            </div>
-            <Footer onPageChange={handlePageChange} />
+
         </div>
     );
 }
