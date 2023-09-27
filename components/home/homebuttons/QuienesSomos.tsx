@@ -25,7 +25,7 @@ const QuienesSomos = () => {
             de alta calidad. Nuestra versatilidad nos permite trabajar en
             diversos sectores profesionales, asegurando siempre una experiencia
             de usuario excepcional y interfaces intuitivas, adaptándonos las
-            necesidades únicas de cada cliente.
+            necesidades únicas de cada cliente. <span className="font-bold">Trabajamos tanto con agencias como con el propietario de la web!</span>
           </p>
           <div className="h-full">
             <Image src="/logo.png" alt="logo" width={900} height={900} />

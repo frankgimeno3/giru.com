@@ -7,13 +7,13 @@ const Inicio = () => {
       <h2 className="text-3xl font-semibold text-gray-800 mb-4">
           Qué es Giru.es? 
         </h2> 
-        <p>
+        <p className="text-black">
           Giru es una empresa dedicada al desarrollo de páginas web.
           Puedes consultar quién somos, los servicios que realizamos y entrar en contacto con nosotros utilizando los botones más arriba.
           A continuación te detallamos por qué trabajar con nosotros si necesitas una página web para tu negocio, y qué nos diferencia de las otras opciones disponibles en el mercado.
         </p>
 
-        <h2 className="text-3xl font-semibold text-gray-800 mb-4 mt-10">
+        <h2 className="text-3xl font-semibold text-gray-800 mb-4 mt-4">
           Por qué trabajar con nosotros?
         </h2>
          

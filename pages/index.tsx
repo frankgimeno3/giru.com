@@ -8,7 +8,7 @@ import Landing from "../components/home/Landing";
 import Footer from "../components/home/Footer";
 import Floating from "../components/home/Floating";
 import React, { useState } from "react";
-
+import Iniciarsesion from "./login"
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<string>("Home");
 
@@ -30,6 +30,9 @@ export default function Home() {
     case "Contacto":
       currentComponent = <Contacto />;
       break;
+      case "Iniciarsesion":
+        currentComponent = <Iniciarsesion />;
+        break;
     default:
       currentComponent = <div>No se encontró la página</div>;
   }
@@ -38,7 +41,7 @@ export default function Home() {
       <Navbar currentPage={currentPage} onPageChange={handlePageChange} />
       <Landing />
       <div className="mx-24 px-24">{currentComponent}</div>
-      <Footer />
+      <Footer onPageChange={handlePageChange}/>
       <div className="fixed bottom-0 right-0 p-4">
         <Floating />
       </div>

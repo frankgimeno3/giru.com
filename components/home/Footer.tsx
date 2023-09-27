@@ -1,15 +1,21 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-const Footer = () => {
+interface FooterProps {
+   onPageChange: (pageName: string) => void;
+}
+const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
+  const router = useRouter();
+
+  const redirection = (pageName: string) => {
+    onPageChange(pageName)
+    router.push("/");
+  };
+
   return (
     <footer className="bg-gray-900 py-12 relative px-24 text-sm">
-      <Image
-        src="/bananobanner.png"
-        alt="Bananobanner"
-        className="absolute inset-0 w-full h-full object-cover opacity-20"
-        width={3000} height={450}
-      />
-      <div className="mx-24 text-white ">
+
+<div className="mx-24 text-white relative z-10">
         <div className="flex flex-row  items-top justify-between align-top">
           <div className="mb-4 flex-1">
             <h3 className="text-md font-semibold">Sobre Nosotros</h3>
@@ -21,20 +27,12 @@ const Footer = () => {
           </div>
           <div className="mb-4  flex-1 text-center" >
             <h3 className="text-md font-semibold">Enlaces Rápidos</h3>
-            <ul className="  flex flex-col">
-              <li className="mt-5">
-                <a href="#" >Inicio</a>
-              </li>
-              <li className="mt-5">
-                <a href="#" >Nosotros</a>
-              </li>
-              <li className="mt-5">
-                <a href="#" >Servicios</a>
-              </li>
-              <li className="mt-5">
-                <a href="#" >Contacto</a>
-              </li>
-            </ul>
+            <div className="  flex flex-col">
+                 <button className="mt-5" onClick={() => redirection('Home')} >Inicio</button>
+                 <button className="mt-5" onClick={() => redirection('QuienesSomos')} >Nosotros</button>
+                 <button className="mt-5" onClick={() => redirection('Servicios')} >Servicios</button>
+                 <button className="mt-5" onClick={() => redirection('Contacto')} >Contacto</button>
+             </div>
           </div>
           <div className="flex-1">
             <h3 className="text-md font-semibold">Contáctanos</h3>
@@ -49,6 +47,13 @@ const Footer = () => {
           &copy; 2023 PROPORCION3,S.A. | Todos los derechos reservados
         </div>
       </div>
+ 
+       <Image
+        src="/bananobanner.png"
+        alt="Bananobanner"
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
+        width={3000} height={450}
+      />
     </footer>
   );
 };
