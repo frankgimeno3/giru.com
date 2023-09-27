@@ -25,10 +25,10 @@ const QuienesSomos = () => {
             de alta calidad. Nuestra versatilidad nos permite trabajar en
             diversos sectores profesionales, asegurando siempre una experiencia
             de usuario excepcional y interfaces intuitivas, adaptándonos las
-            necesidades únicas de cada cliente. <span className="font-bold">Trabajamos tanto con agencias como con el propietario de la web!</span>
+            necesidades únicas de cada cliente. <span className="font-bold">Trabajamos tanto con agencias como con empresas que quieran su propia web!</span>
           </p>
           <div className="h-full">
-            <Image src="/logo.png" alt="logo" width={900} height={900} />
+            <Image src="/logo.png" alt="logo" width={940} height={940} />
           </div>
         </div>
         <div className="flex flex-row align-center mt-6  shadow-lg">
@@ -36,8 +36,8 @@ const QuienesSomos = () => {
             <Image
               src="/ia.png"
               alt="ia"
-              width={1080} // Establece un valor máximo para el ancho
-              height={1080} // Establece un valor máximo para el alto
+              width={925} // Establece un valor máximo para el ancho
+              height={925} // Establece un valor máximo para el alto
              />
           </div>
           <p className="   text-base text-gray-600 p-10  bg-transparent leading-relaxed  pt-14">
@@ -46,7 +46,7 @@ const QuienesSomos = () => {
             dar vida a cualquier imagen que puedas imaginar mediante
             inteligencia artificial, para que puedas llenar tu web de imágenes
             sin necesidad de un fotógrafo.
-            <span className="font-bold">Todas las imágenes de esta web han sido creadas con inteligencia artificial!</span>
+            <span className="font-bold"> Todas las imágenes de esta web han sido creadas con inteligencia artificial!</span>
           </p>
         </div>
         <div className="flex flex-row align-center mt-6  shadow-lg">
@@ -60,8 +60,8 @@ const QuienesSomos = () => {
             <Image
               src="/tutiempo.png"
               alt="tutiempo"
-              width={725}
-              height={725}
+              width={645}
+              height={645}
             />
           </div>
         </div>
