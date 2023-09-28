@@ -63,7 +63,7 @@ const Contactanos = () => {
                                 type="email"
                                 id="email"
                                 name="email"
-                                className="w-full px-3 py-2 border-2 rounded-lg bg-gray-100 bg-opacity-90 text-black placeholder-black"
+                                className="w-full px-3 py-2 border-2 rounded-lg bg-gray-100 bg-opacity-90 text-black text-sm lg:text-xl placeholder-black"
                                 placeholder="Introduce tu correo electrónico"
                             />
                         </div>
@@ -72,7 +72,7 @@ const Contactanos = () => {
                                 type="string"
                                 id="telefono"
                                 name="telefono"
-                                className="w-full px-3 py-2 border-2 rounded-lg bg-gray-100 bg-opacity-90 text-black placeholder-black"
+                                className="w-full px-3 py-2 border-2 rounded-lg bg-gray-100 bg-opacity-90 text-black text-sm lg:text-xl placeholder-black"
                                 placeholder="Introduce un teléfono de contacto"
                             />
                         </div>
@@ -81,7 +81,7 @@ const Contactanos = () => {
                                 id="message"
                                 name="message"
                                 rows={10}
-                                className="w-full px-3 py-2 border-2 rounded-lg bg-gray-100 bg-opacity-90 text-black placeholder-black"
+                                className="w-full px-3 py-2 border-2 rounded-lg bg-gray-100 bg-opacity-90 text-black text-sm lg:text-xl placeholder-black"
                                 placeholder="Ingresa tu mensaje aquí"
                             ></textarea>
                         </div>
