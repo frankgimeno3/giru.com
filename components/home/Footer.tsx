@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
   return (
     <footer className="bg-gray-900 py-12 relative lg:px-24 text-sm">
 
-<div className="mx-24 text-white relative z-10">
+<div className="lg:mx-24 text-white relative z-10">
         <div className="flex flex-row  items-top justify-between align-top">
           <div className="mb-4 flex-1">
             <h3 className="text-md font-semibold">Sobre Nosotros</h3>

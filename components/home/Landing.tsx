@@ -32,24 +32,23 @@ const Landing = () => {
     scrollToSmoothly(scrollAmount, 1000);
    }
   return (
-    <div className="relative">
-      <div className="lg:max-w-screen bg-black lg:overflow-crop relative">
+    <div className="relative pt-16 bg-black">
+      <div className="h-20vh lg:max-w-screen bg-black lg:overflow-crop relative">
         <Image
           src="/giruking.png"
           alt="Giruking Image"
           width={2000}
           height={2000}
-          layout="responsive"
-          objectFit="cover"
+           objectFit="cover"
           objectPosition="top"
         />
       </div>
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-30 ">
-        <div className="lg:mt-16 pt-24 w-full py-10">
-          <h1 className=" lg:mt-16 lg:pt-24 w-full text-center font-bold lg:text-4xl  text-white ">
+        <div className="mt-6 lg:mt-16 pt-24 w-full py-10">
+          <h1 className="mt-16 lg:mt-16 lg:pt-24 w-full text-center font-bold text-xl lg:text-4xl  text-white ">
             BIENVENIDO AL DESARROLLO{" "}
           </h1>
-          <h1 className=" w-full text-center font-bold lg:text-7xl   text-white ">
+          <h1 className=" w-full text-center font-bold text-4xl lg:text-7xl   text-white ">
             ORIGINAL
           </h1>
         </div>
