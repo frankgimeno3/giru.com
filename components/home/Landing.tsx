@@ -33,7 +33,7 @@ const Landing = () => {
    }
   return (
     <div className="relative">
-      <div className="max-w-screen bg-black overflow-crop relative">
+      <div className="lg:max-w-screen bg-black lg:overflow-crop relative">
         <Image
           src="/giruking.png"
           alt="Giruking Image"
@@ -44,18 +44,18 @@ const Landing = () => {
           objectPosition="top"
         />
       </div>
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-30">
-        <div className="mt-24 pt-24 w-full py-10">
-          <h1 className=" mt-16 pt-24 w-full text-center font-bold text-4xl  text-white ">
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-30 ">
+        <div className="lg:mt-16 pt-24 w-full py-10">
+          <h1 className=" lg:mt-16 lg:pt-24 w-full text-center font-bold lg:text-4xl  text-white ">
             BIENVENIDO AL DESARROLLO{" "}
           </h1>
-          <h1 className=" w-full text-center font-bold text-7xl   text-white ">
+          <h1 className=" w-full text-center font-bold lg:text-7xl   text-white ">
             ORIGINAL
           </h1>
         </div>
       </div>
-      <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-25">
-        <div className="mt-24 pt-24">
+      <div className="hidden md:block absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-25">
+        <div className="lg:mt-24 lg:pt-24 ">
           <button className="mt-24   bg-white hover:bg-yellow-500 bg-opacity-20 hover:bg-opacity-40 p-2 rounded-full shadow-md hover:shadow-lg"
           onClick={scrollDown}>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

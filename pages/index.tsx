@@ -18,20 +18,20 @@ export default function Home() {
   };
   let currentComponent;
   let componentclass
-
+  
   switch (currentPage) {
     case "Home":
       currentComponent = <Inicio />;
-      componentclass = "mx-24 px-24"
+      componentclass = "mx-12 lg:mx-24 px-12 lg:px-24"
       break;
     case "QuienesSomos":
       currentComponent = <QuienesSomos />;
-      componentclass = "mx-24 px-24"
+      componentclass = "mx-12 lg:mx-24 px-12 lg:px-24"
 
       break;
     case "Servicios":
       currentComponent = <Servicios />;
-      componentclass = "mx-24 px-24"
+      componentclass = "mx-12 lg:mx-24 px-12 lg:px-24"
 
       break;
     case "Contacto":
@@ -40,7 +40,7 @@ export default function Home() {
       break;
     default:
       currentComponent = <Inicio />;
-      componentclass = "mx-24 px-24"
+      componentclass = "mx-12 lg:mx-24 px-12 lg:px-24"
 
   }
 
@@ -50,8 +50,8 @@ export default function Home() {
     currentPage === "Home" || currentPage === "QuienesSomos" || currentPage === "Servicios";
 
   return (
-    <div className="bg-white">
-      <div className="bg-slate-300 bg-opacity-10">
+    
+      <div className="flex flex-col bg-slate-50  ">
         <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
         {shouldRenderLanding && <Landing />}
@@ -64,7 +64,6 @@ export default function Home() {
             </div>
           )}
        </div>
-    </div>
   );
 }
 
