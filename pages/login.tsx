@@ -21,16 +21,16 @@ export default function Login() {
                 >
                     Volver a <span className="font-bold">giru.es</span>                </button>
             </nav>
-            <div className="w-full h-screen flex flex-col justify-center items-center   relative ">
-                <div className="mt-24 w-full py-16 z-10 text-gray-800">
+            <div className=" h-screen flex flex-col justify-center items-center   relative ">
+                <div className="mt-24  w-full py-16 z-10 text-gray-800">
                     <h1 className="w-full text-center font-bold text-4xl text-white ">
                         INICIAR SESIÓN
                     </h1>
-                    <p className="w-full text-center   text-xl text-white ">
+                    <p className="w-full px-5 text-center text-lg  md:text-xl text-white ">
                         Acceda a su contenido personalizado como cliente de Giru
                     </p>
-                    <div className="mx-24 px-24 mt-5">
-                        <form className=" mx-24 text-center px-24 py-5">
+                    <div className="md:mx-24 md:px-24 mt-5">
+                        <form className="md:mx-24 text-center md:px-24 py-5">
                             <div className="mb-4 mx-16">
 
                                 <input
@@ -53,7 +53,7 @@ export default function Login() {
                             </div>
                             <button
                                 type="submit"
-                                className="bg-yellow-500 text-black rounded-lg shadow-lg px-5 py-3 font-bold mx-5 text-sm "                            >
+                                className="bg-yellow-500 text-black rounded-lg shadow-lg px-5 py-3 lg:font-bold mx-5 text-sm "                            >
                                 INICIAR SESIÓN
                             </button>
                         </form>

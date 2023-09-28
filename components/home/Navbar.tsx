@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) => {
         >
           <span className='font-bold'>giru</span>.es
         </button>
-        <div className="hidden sm:block flex flex-row text-right pr-4 py-2 w-full text-gray-800 font-bold border border-red-300">
+        <div className="hidden sm:block flex flex-row text-right pr-4 py-2 w-full text-gray-800 font-bold">
           <button
             className={`mx-4 text-sm ${currentPage === 'Home' ? 'text-white' : 'text-yellow-500'}`}
             onClick={handleHomeClick}
