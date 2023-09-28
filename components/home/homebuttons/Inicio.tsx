@@ -50,7 +50,7 @@ const Inicio = () => {
           Por qué trabajar con nosotros?
         </h2>
 
-        <div className="flex flex-col lg:flex-row align-center mt-2 lg:mt-6  shadow-lg">
+        <div className="flex flex-col sm:flex-row align-center mt-2 lg:mt-6  shadow-lg">
           <div >
             <Image
               src="/ia.png"
@@ -68,7 +68,7 @@ const Inicio = () => {
             <span className="font-bold"> Todas las imágenes de esta web han sido creadas con inteligencia artificial!</span>
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row align-center mt-6  shadow-lg">
+        <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
           <p className="text-sm md:text-sm lg:text-base text-gray-600 leading-relaxed p-6 md:p-10 md:pt-20 bg-transparent  ">
             Tu tiempo es valioso, y en Giru, estamos aquí para maximizar su
             aprovechamiento y garantizar el éxito de tu proyecto. Trabajamos en
@@ -84,7 +84,7 @@ const Inicio = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row align-center mt-6  shadow-lg">
+        <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
           <div>
             <Image
               src="/revision1.png"
@@ -98,7 +98,7 @@ const Inicio = () => {
             Se te realizará un seguimiento en tiempo real del estado de tu página web, para que puedas ver de cerca que se está desarrollando correctamente.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row align-center mt-6  shadow-lg">
+        <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
           <p className="   text-sm md:text-sm lg:text-base text-gray-600 p-6 md:p-10 md:pt-20  bg-transparent leading-relaxed ">
             Una vez dispongas de la página web, estamos a tu disposición para la resolución de problemas técnicos y reparaciones.
             Contáctanos a nuestro whatsap para recibir una respuesta rápida, solucionando tus problemas en un tiempo récord.
