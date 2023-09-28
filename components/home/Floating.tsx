@@ -37,7 +37,7 @@ const Floating: React.FC<FloatingProps> = ({ setCurrentPage }) => {
 
 
   return (
-    <>
+<div className="hidden sm:block">
       {isVisible && (
         <div>
           <div className="relative  "
@@ -54,7 +54,7 @@ const Floating: React.FC<FloatingProps> = ({ setCurrentPage }) => {
         </div>
 
       )}
-    </>
+    </div>
   );
 };
 
