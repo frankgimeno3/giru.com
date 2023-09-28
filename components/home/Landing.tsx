@@ -32,7 +32,7 @@ const Landing = () => {
     scrollToSmoothly(scrollAmount, 1000);
    }
   return (
-    <div className="relative  bg-black">
+    <div className="relative pt-5 bg-black">
       <div className="h-20vh lg:max-w-screen bg-black lg:overflow-crop relative">
         <Image
           src="/giruking.png"
