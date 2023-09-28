@@ -34,22 +34,22 @@ const Contacto = () => {
   }, []);
 
   return (
-    <div className="px-4 bg-white pb-12 pt-2 lg:pt-8 relative lg:px-24 text-sm">
-      <div className="px-5 ">
-        <h2 className="text-2xl font-semibold text-gray-600 mb-2">
+    <div className="px-4 bg-white pb-12 pt-6 lg:pt-8 relative lg:px-24 text-sm">
+      <div className="px-6 ">
+        <h2 className="text-xl md:text-2xl font-semibold text-gray-600 mb-2">
           Nuestros servicios
         </h2>
-        <p className="   text-base text-gray-600 pl-2   bg-transparent leading-relaxed ">
+        <p className="text-sm md:text-base text-gray-600 md:pl-2   bg-transparent leading-relaxed ">
           Disponemos de diferentes servicios que se adaptan perfil de negocio de
           nuestros clientes. Paralelamente, ofrecemos la posibilidad de
           personalizar las soluciones a cada caso particular.
         </p>
 
-        <h2 className="text-2xl font-semibold text-gray-600 mt-7">
+        <h2 className="text-xl md:text-2xl font-semibold text-gray-600 mt-7">
           Servicios disponibles
         </h2>
 
-        <div className="flex flex-row align-center mt-2 shadow-lg">
+        <div className="flex flex-col sm:flex-row align-center mt-2 shadow-lg">
           <div>
             <Image
               src="/tienda.png"
@@ -58,9 +58,9 @@ const Contacto = () => {
               height={650}
              />
           </div>
-          <div className="   text-lg text-gray-600 p-10  bg-gray-50 shadow-lg">
+          <div className="text-lg text-gray-600 p-6 md:p-10 bg-gray-50 shadow-lg">
             <p className="font-bold">Soluciones para comercios retail</p>
-            <p className="   text-base text-gray-600  bg-transparent leading-relaxed ">
+            <p className="text-sm md:text-base text-gray-600  bg-transparent leading-relaxed ">
               Implementámos páginas web para su negocio, en las que puede
               mostrar su ubicación, productos, contacto... Creamos catálogos
               digitales, con carrito de la compra y funcionalidades para tienda
@@ -68,10 +68,10 @@ const Contacto = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row align-center mt-6  shadow-lg">
-          <div className="   text-lg text-gray-600  p-10 pr-16 pt-14 bg-gray-50 shadow-lg">
+        <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
+          <div className="text-lg text-gray-600 p-6 md:p-10 pr-16 md:pt-14 bg-gray-50 shadow-lg">
             <p className="font-bold">Soluciones para empresas</p>
-            <p className="   text-base text-gray-600    bg-transparent leading-relaxed ">
+            <p className="text-sm md:text-base text-gray-600    bg-transparent leading-relaxed ">
               Brindamos soluciones web para lo que su web necesite.
               Desde aplicaciones para automatizar tareas, hasta sitios webs corporativos.
             </p>
@@ -80,7 +80,7 @@ const Contacto = () => {
             <Image src="/oficina.png" alt="oficina" width={400} height={400} />
           </div>
         </div>
-        <div className="flex flex-row align-center mt-6  shadow-lg">
+        <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
           <div>
             <Image
               src="/revision1.png"
@@ -89,7 +89,7 @@ const Contacto = () => {
               height={870}
              />
           </div>
-          <p className="   text-base text-gray-600 p-10 pt-16  bg-transparent leading-relaxed ">
+          <p className="text-sm md:text-base text-gray-600 p-6 md:p-10 md:pt-16  bg-transparent leading-relaxed ">
             Te guiamos paso a paso. Dispondrás de comunicación directa con un
             comercial técnico que te asesorará desde la fase de diseño hasta la
             entrega final. Se te realizará un seguimiento en tiempo real del
@@ -97,8 +97,8 @@ const Contacto = () => {
             desarrollando correctamente.
           </p>
         </div>
-        <div className="flex flex-row align-center mt-6  shadow-lg">
-        <p className="   text-base text-gray-600 p-10  pt-20  bg-transparent leading-relaxed ">
+        <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
+        <p className="text-sm md:text-base text-gray-600 p-6 md:p-10 md:pt-20  bg-transparent leading-relaxed ">
             Una vez dispongas de la página web, estamos a tu disposición para la
             resolución de problemas técnicos y reparaciones. Contáctanos a
             nuestro whatsap para recibir una respuesta rápida, solucionando tus
