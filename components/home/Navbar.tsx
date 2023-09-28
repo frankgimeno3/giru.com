@@ -31,47 +31,47 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) => {
   };
 
   return (
-    <nav className="  fixed top-0 left-0 w-full z-50">
+    <nav className="fixed top-0 left-0 w-full z-50">
       <div className="flex flex-row justify-between z-10 relative">
         <button
-          className="flex  text-yellow-500 px-5 py-3 m-2 ml-5 text-lg"
+          className="text-yellow-500 px-5 py-3 m-2 ml-5 text-lg"
           onClick={handleHomeClick}
         >
           <span className='font-bold'>giru</span>.es
         </button>
-        <div className="hidden  flex flex-row justify-center align-center py-2 w-full text-gray-800 font-bold">
+        <div className="hidden sm:block flex flex-row text-right pr-4 py-2 w-full text-gray-800 font-bold border border-red-300">
           <button
-            className={`mx-5 text-sm ${currentPage === 'Home' ? 'text-white' : 'text-yellow-500'}`}
+            className={`mx-4 text-sm ${currentPage === 'Home' ? 'text-white' : 'text-yellow-500'}`}
             onClick={handleHomeClick}
           >
             Home
           </button>
           <button
-            className={`mx-5 text-sm ${currentPage === 'QuienesSomos' ? 'text-white' : 'text-yellow-500'}`}
+            className={`mx-4 text-sm ${currentPage === 'QuienesSomos' ? 'text-white' : 'text-yellow-500'}`}
             onClick={handleQuienesClick}
           >
             Nosotros
           </button>
           <button
-            className={`mx-5 text-sm ${currentPage === 'Servicios' ? 'text-white' : 'text-yellow-500'}`}
+            className={`mx-4 text-sm ${currentPage === 'Servicios' ? 'text-white' : 'text-yellow-500'}`}
             onClick={handleServiciosClick}
           >
             Servicios
           </button>
           <button
-            className={`mx-5 text-sm ${currentPage === 'Contacto' ? 'text-white' : 'text-yellow-500'}`}
+            className={`mx-4 text-sm ${currentPage === 'Contacto' ? 'text-white' : 'text-yellow-500'}`}
             onClick={gotocontacts}
           >
             Contáctanos
           </button>
           <button
-            className="bg-yellow-500 text-black rounded-lg my-1 px-4 mx-5 text-sm font-light"
+            className="bg-yellow-500 text-black rounded-lg my-2 px-3 ml-3 md:mx-4 py-2 text-sm font-light"
             onClick={handleIniciarSesionClick}
           >
             Iniciar Sesión
           </button>
         </div>
-        <div className=' mr-10 mt-4  '>
+        <div className=' mr-10 mt-4   sm:hidden '>
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48">
             <path
               fill="#FFF"
