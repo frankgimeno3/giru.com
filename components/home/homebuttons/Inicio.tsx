@@ -40,7 +40,7 @@ const Inicio = () => {
         <h2 className="mt-8 text-xl lg:text-2xl font-semibold text-gray-600 mb-2">
           Qué es Giru.es?
         </h2>
-        <p className=" text-gray-700 text-base   lg:p-5">
+        <p className=" text-gray-700 text-base lg:p-5">
           Giru es una empresa dedicada al desarrollo de páginas web.
           Puedes consultar quién somos, los servicios que realizamos y entrar en contacto con nosotros utilizando los botones más arriba.
           A continuación te detallamos por qué trabajar con nosotros si necesitas una página web para tu negocio, y qué nos diferencia de las otras opciones disponibles en el mercado.
@@ -59,7 +59,7 @@ const Inicio = () => {
               height={1050}
             />
           </div>
-          <p className="   text-sm md:text-sm lg:text-base text-gray-600 p-6 md:p-10  bg-transparent leading-relaxed md:pt-14">
+          <p className=" text-sm lg:text-base text-gray-600 p-6 md:p-10  bg-transparent leading-relaxed md:pt-14">
             Utilizamos inteligencia artificial para crear imágenes y textos
             originales y únicos. Ofrecemos un servicio único:
             dar vida a cualquier imagen que puedas imaginar mediante
@@ -69,7 +69,7 @@ const Inicio = () => {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
-          <p className="text-sm md:text-sm lg:text-base text-gray-600 leading-relaxed p-6 md:p-10 md:pt-20 bg-transparent  ">
+          <p className="text-sm lg:text-base text-gray-600 leading-relaxed p-6 md:p-10 md:pt-20 bg-transparent  ">
             Tu tiempo es valioso, y en Giru, estamos aquí para maximizar su
             aprovechamiento y garantizar el éxito de tu proyecto. Trabajamos en
             un rango de <span className="font-bold "> tiempo aproximado de 2 meses </span> desde la conceptualización del

@@ -36,16 +36,16 @@ const QuienesSomos = () => {
  
 
   return (
-    <section className="bg-white pb-12 pt-8 relative px-24 text-sm">
-      <div>
-        <h2 className="text-2xl font-semibold text-gray-600 mb-2">
+    <section className="px-4 bg-white pb-12  pt-4 lg:pt-8 relative lg:px-24 text-sm">
+      <div className="px-6 ">
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-600 sm:mb-2">
           Quiénes somos
         </h2>
-        <div className="flex flex-row align-center mt-6  shadow-lg">
+        <div className="flex flex-col sm:flex-row align-center mt-2 sm:mt-6  shadow-lg">
           <div>
-            <Image src="/aboutus.png" alt="aboutuse" width={790} height={790} />
+            <Image src="/aboutus.png" alt="aboutus" width={790} height={790} />
           </div>
-          <p className="   text-base text-gray-600 p-10  bg-transparent leading-relaxed  pt-12">
+          <p className=" text-sm   lg:text-base text-gray-600 p-6 md:p-10 bg-transparent leading-relaxed  md:pt-12">
             Somos una agencia de desarrolladores web con sede en Barcelona,
             comprometidos en ofrecer soluciones de desarrollo de software de
             alta calidad. Nuestro equipo está formado por expertos en diferentes
@@ -53,8 +53,8 @@ const QuienesSomos = () => {
             alcanzar sus objetivos tecnológicos.
           </p>
         </div>
-        <div className="flex flex-row align-center mt-6  shadow-lg">
-        <p className="   text-base text-gray-600 p-10  bg-transparent leading-relaxed  pt-10">
+        <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
+        <p className=" text-sm   lg:text-base text-gray-600 p-6 md:p-10 bg-transparent leading-relaxed  md:pt-10">
             En Giru, destacamos por la creación de <span className="font-bold">contenido único,</span> original y
             de alta calidad. Nuestra versatilidad nos permite trabajar en
             diversos sectores profesionales, asegurando siempre una experiencia
@@ -65,7 +65,7 @@ const QuienesSomos = () => {
             <Image src="/logo.png" alt="logo" width={940} height={940} />
           </div>
         </div>
-        <div className="flex flex-row align-center mt-6  shadow-lg">
+        <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
           <div>
             <Image
               src="/ia.png"
@@ -74,7 +74,7 @@ const QuienesSomos = () => {
               height={925} // Establece un valor máximo para el alto
              />
           </div>
-          <p className="   text-base text-gray-600 p-10  bg-transparent leading-relaxed  pt-14">
+          <p className=" text-sm   lg:text-base text-gray-600 p-6 md:p-10 bg-transparent leading-relaxed  md:pt-14">
             Utilizamos inteligencia artificial para crear imágenes y textos
             originales y únicos. Ofrecemos un servicio único:
             dar vida a cualquier imagen que puedas imaginar mediante
@@ -83,8 +83,8 @@ const QuienesSomos = () => {
             <span className="font-bold"> Todas las imágenes de esta web han sido creadas con inteligencia artificial!</span>
           </p>
         </div>
-        <div className="flex flex-row align-center mt-6  shadow-lg">
-        <p className="   text-base text-gray-600 p-10  bg-transparent leading-relaxed  pt-20">
+        <div className="flex flex-col sm:flex-row align-center mt-6  shadow-lg">
+        <p className="text-sm   lg:text-base text-gray-600 p-6 md:p-10  bg-transparent leading-relaxed md:pt-20">
             Tu tiempo es valioso, y en Giru, estamos aquí para maximizar su
             aprovechamiento y garantizar el éxito de tu proyecto. Trabajamos en
             un rango de <span className="font-bold  "> tiempo aproximado de 2 meses </span> desde la conceptualización del

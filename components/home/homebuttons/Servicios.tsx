@@ -34,8 +34,8 @@ const Contacto = () => {
   }, []);
 
   return (
-    <div className="bg-white pb-12 pt-8 relative px-24 text-sm">
-      <div>
+    <div className="px-4 bg-white pb-12 pt-2 lg:pt-8 relative lg:px-24 text-sm">
+      <div className="px-5 ">
         <h2 className="text-2xl font-semibold text-gray-600 mb-2">
           Nuestros servicios
         </h2>
