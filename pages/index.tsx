@@ -22,16 +22,16 @@ export default function Home() {
   switch (currentPage) {
     case "Home":
       currentComponent = <Inicio />;
-      componentclass = "md:mx-5 md:mx-12 lg:mx-24 px-5 md:px-12 lg:px-24"
+      componentclass = "md:mx-5 md:mx-12 lg:mx-24   md:px-12 lg:px-24"
       break;
     case "QuienesSomos":
       currentComponent = <QuienesSomos />;
-      componentclass = "mx-5 md:mx-12 lg:mx-24 px-5 md:px-12 lg:px-24"
+      componentclass = "md:mx-5 md:mx-12 lg:mx-24   md:px-12 lg:px-24"
 
       break;
     case "Servicios":
       currentComponent = <Servicios />;
-      componentclass = "mx-5 md:mx-12 lg:mx-24 px-5 md:px-12 lg:px-24"
+      componentclass = "md:mx-5 md:mx-12 lg:mx-24   md:px-12 lg:px-24"
 
       break;
     case "Contacto":
@@ -40,7 +40,7 @@ export default function Home() {
       break;
     default:
       currentComponent = <Inicio />;
-      componentclass = "mx-5 md:mx-12 lg:mx-24 px-5 md:px-12 lg:px-24"
+      componentclass = "md:mx-5 md:mx-12 lg:mx-24   md:px-12 lg:px-24"
 
   }
 

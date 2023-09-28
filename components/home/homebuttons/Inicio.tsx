@@ -35,7 +35,7 @@ const Inicio = () => {
   }, []);
  
     return (
-    <div className=" pt-5 bg-white pb-12 lg:pt-8 relative lg:px-24 text-sm">
+    <div className=" px-4 pt-2 bg-white pb-12 lg:pt-8 relative lg:px-24 text-sm">
       <div className="px-5 ">
         <h2 className="mt-8 text-xl lg:text-2xl font-semibold text-gray-600 mb-2">
           Qué es Giru.es?
@@ -46,11 +46,11 @@ const Inicio = () => {
           A continuación te detallamos por qué trabajar con nosotros si necesitas una página web para tu negocio, y qué nos diferencia de las otras opciones disponibles en el mercado.
         </p>
 
-        <h2 className="text-lg  text-2xl font-semibold text-gray-600 mb-2 mt-7">
+        <h2 className="text-xl lg:text-2xl font-semibold text-gray-600 lg:mb-2 mt-7">
           Por qué trabajar con nosotros?
         </h2>
 
-        <div className="flex flex-col lg:flex-row align-center mt-6  shadow-lg">
+        <div className="flex flex-col lg:flex-row align-center mt-2 lg:mt-6  shadow-lg">
           <div >
             <Image
               src="/ia.png"
