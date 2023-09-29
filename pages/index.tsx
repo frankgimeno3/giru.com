@@ -88,18 +88,18 @@ export default function Home() {
           </div>
         )}
         <div className={isMenuOpen ? 
-          'fixed top-0 right-0 flex flex-col text-gray-800 z-50 bg-white bg-opacity-90   mt-16 border border-gray-100' : 'hidden'}>
-          <ul className='flex flex-col text-lg text-gray-600 w-screen '>
-            <button className='p-8 py-14 w-full border border-gray-100 bg-white bg-opacity-80' onClick={handleQuienesClick}>
+          'fixed top-0 right-0 flex flex-col text-yellow-500 z-50 bg-zinc-900 bg-opacity-90 mt-16 w-screen' : 'hidden'}>
+          <ul className='flex flex-col text-xs  '>
+            <button className=' py-2 ' onClick={handleQuienesClick}>
               Nosotros
             </button>
-            <button className='p-8 py-16 w-full border border-gray-100 bg-white bg-opacity-80' onClick={handleServiciosClick}>
+            <button className='py-2 ' onClick={handleServiciosClick}>
               Servicios
             </button>
-            <button className='p-8 py-16 w-full border border-gray-100 bg-white bg-opacity-80' onClick={gotocontacts}>
+            <button className=' py-2 ' onClick={gotocontacts}>
               Contáctanos
             </button>
-            <button className='p-8 py-16 w-full border border-gray-100 bg-white bg-opacity-80' onClick={handleIniciarSesionClick}>
+            <button className='py-2   ' onClick={handleIniciarSesionClick}>
               Iniciar Sesión
             </button>
           </ul>
