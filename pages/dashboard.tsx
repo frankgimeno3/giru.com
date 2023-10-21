@@ -28,10 +28,15 @@ export default function Dashboard() {
                     <p className="w-full px-5 text-center text-lg  md:text-xl text-white ">
                        Bienvenido a su interfaz de usuario
                     </p>
+                    {/* <Hero/> */}
                     <div className="md:mx-24 md:px-24 mt-5">
                     <h2>Aquí tiene que ir un formulario para pedir presupuestos</h2>
+                    {/* <Formulario/> */}
+
                     <h2>Luego, un listado de los proyectos en curso</h2>
                           <h2>Luego, para cada proyecto, link al repo, capturas del estado, contrato de especificaciones y factura adjuntos</h2>
+                          {/* <Listadoproyectos/> */}
+
                     <h2>Abajo, listado de todos los proyectos realizados anteriormente con la compañía</h2>
                     </div>
                 </div>
